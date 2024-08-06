@@ -11,7 +11,6 @@ logo: str = print("""
 """)
 
 # Game images
-
 rock_image: str = """
     _______
 ---'   ____)
