@@ -1,9 +1,9 @@
 # Day 05: Password Generator
 
 ## Description
-The goal for this project is to create a password generator, asking the user how many letters, numbers and symbols he want in his password.
+The goal for this project is to create a **password generator**, based on the number of letters, numbers and symbols the user wants in his password.
 
-To achieve this, we worked with lists and for loops.
+The idea behind this challenge is to work with **for loops, range and code blocks**.
 
 ## How to Use
 Execute the `password_generator.py` script to start the application.
