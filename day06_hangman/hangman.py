@@ -3,9 +3,9 @@ import art
 from random import choice
 
 # Words List
-fruits: list = ['apple', 'banana', 'strawberry', 'tomato', 'watermelon',
-                'orange', 'mango', 'pear', 'tangerine', 'pineapple',
-                'melon', 'peach', 'lemon', 'papaya', 'grape']
+fruits: list = ["apple", "banana", "strawberry", "tomato", "watermelon",
+                "orange", "mango", "pear", "tangerine", "pineapple",
+                "melon", "peach", "lemon", "papaya", "grape"]
 
 # Game Config.
 number_of_chances: int = 6 # Number of chances the player has
@@ -20,8 +20,8 @@ print(art.logo)
 
 while not game_over:
     print(art.stages[number_of_chances])
-    print(' '.join(display))
-    guess_letter: str = input('Choose a letter: ').lower()
+    print(" ".join(display))
+    guess_letter: str = input("Choose a letter: ").lower()
 
     # If player choose a repeated word
     if guess_letter in display:
@@ -43,7 +43,7 @@ while not game_over:
         if "_" not in display:
             game_over = True
             os.system("cls")
-            print("'Congrats! You won the game!")
+            print("Congrats! You won the game!")
     
     # If the player missed the letter
     else:
