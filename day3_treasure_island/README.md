@@ -1,9 +1,9 @@
 # Day 03: Treasure Island
 
 ## Description
-The purpose of this project is to create a simple version of a Treasure Hunt game.
+The purpose of this project is to create an **exploration game**, in which the player choose options from a set of questions, and relies on luck to reach the end of the game.
 
-In this project, we used control flow with conditional statements, and started working with project scope creation.
+The idea behind this challenge is to work with **conditional statements, logical operators and project scope creation**.
 
 ## Fluxogram
 ![Treasure Hunt Fluxogram](assets/flowchart.png)
