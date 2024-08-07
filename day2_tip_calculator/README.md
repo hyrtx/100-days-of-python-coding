@@ -1,9 +1,9 @@
 # Day 02: Tip Calculator
 
 ## Description
-The goal of this project is to create a tip calculator, by adding up the amount of the bill and the tip and dividing it between the people who consumed it.
+The goal of this project is to create a tip calculator, that divides the total value plus tip among the number of people who consumed.
 
-In this project, we worked with mathematical operations using python.
+The idea behind this challenge is to work with numbers and mathematical operators.
 
 ## How to Use
 Execute the `main.py` script to start the application.
