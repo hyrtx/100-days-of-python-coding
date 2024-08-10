@@ -1,9 +1,7 @@
-# Day 08: Calculator
+# Day 09: Calculator
 
 ## Description
 The goal of this project is to create a **Calculator**. In the calculator, you'll have the possibility to do four mathematical operations: **addtion, subtraction, multiplication and division**.
-
-...
 
 ## How to Use
 Execute the `main.py` script to start the program.
