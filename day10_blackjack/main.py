@@ -20,9 +20,9 @@ def get_card():
 def get_dealer_hand():
     """Draw the dealer cards from the deck"""
     dealer_hand: list = []
-    card: int = get_card()
 
     while sum(dealer_hand) < 18:
+        card: int = get_card()
         if card == 11 and sum(dealer_hand) > 10:
             dealer_hand.append(1)
         else:    
@@ -44,16 +44,22 @@ def result(player_hand: list, dealer_hand: list) -> str:
         return "You busted! Dealer Wins"
     elif sum(dealer_hand) > 21 or sum(player_hand) > sum(dealer_hand):
         return "You Won! Congratulations!"
+    elif sum(player_hand) == sum(dealer_hand):
+        return "Draw"
     else:
         return "Dealer wins! Congratulations!"
-
 
 dealer_hand: list = get_dealer_hand()
 player_hand: list = []
 
 # Drawing the first two player's cards
 for i in range(0, 2):
-    player_hand.append(get_card)
+    player_hand.append(get_card())
+
+# Start of the Game
+
+print(logo)
+print("Welcome to the Blackjack Game\n")
 
 # Giving the player the choice to draw another card
 while sum(player_hand) < 21:
@@ -71,6 +77,10 @@ while sum(player_hand) < 21:
     else:
         break
 
+# Determining the result
 print(f"   Your final hand: {player_hand}, total score: {sum(player_hand)}")
-print(f"   Dealer's final hand: {dealer_hand}, total score: {sum(dealer_hand)}")
-print(result)
+if sum(player_hand) > 21:
+    print(f"   Dealer's final hand: [{dealer_hand[0]}], total score: {dealer_hand[0]}")
+else:
+    print(f"   Dealer's final hand: {dealer_hand}, total score: {sum(dealer_hand)}")
+print(result(player_hand, dealer_hand))
