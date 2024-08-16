@@ -64,12 +64,10 @@ while True:
 
     if correct_answer == user_choice:
         score += 1
+        contestant_a = contestant_b
         print(f"Nice, you guessed right!")
         os.system("cls")
         print(art.logo)
-        
-        if correct_answer == "b":
-            contestant_a = contestant_b
 
     else:
         os.system("cls")
