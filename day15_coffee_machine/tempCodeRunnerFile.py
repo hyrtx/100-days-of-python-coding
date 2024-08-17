@@ -28,12 +28,8 @@ while True:
     # Prompt user by asking “What would you like? (espresso/latte/cappuccino)
     choice: str = input("What would you like? (espresso/latte/cappuccino): ")
 
-    # Turning off option
-    if choice == "off":
-        print("Turning off the machine...")
-    
     # Print report
-    elif choice == "report":
+    if choice == "report":
         get_report()
         break
         
