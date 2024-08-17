@@ -9,7 +9,7 @@ resources: dict = {
 
 money: float = 0
 
-def get_report():
+def get_report() -> None:
     unit: str = ""
 
     for k, v in resources.items():
@@ -18,11 +18,13 @@ def get_report():
             unit = "g"
         else:
             unit = "ml"
-
+        
         print(f"{k}: {v}{unit}")
-    
+
     print(f"Money: ${money}")
 
+def check_resources(product: str):
+    return None
 
 while True:
     # Prompt user by asking “What would you like? (espresso/latte/cappuccino)
@@ -31,9 +33,10 @@ while True:
     # Turning off option
     if choice == "off":
         print("Turning off the machine...")
-    
+
     # Print report
     elif choice == "report":
         get_report()
         break
         
+# Check resources sufficient
