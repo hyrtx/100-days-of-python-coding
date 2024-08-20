@@ -16,8 +16,8 @@ Here you can follow the status of the challenge.
 
 | Difficulty    | Days      | Nº of Projects | Status |
 |:--------------|:----------|---------------:|-------:|
-| Beginner      | 1 - 14    | 12             | 91.6%  |
-| Intermediate  | 15 - 31   | 17             | 0%     |
+| Beginner      | 1 - 14    | 12             | 100%   |
+| Intermediate  | 15 - 31   | 17             | 5.8%   |
 | Intermediate+ | 32 - 58   | 27             | 0%     |
 | Advanced      | 59 - 81   | 23             | 0%     |
 | Professional  | 82 - 100  | 19             | 0%     |
